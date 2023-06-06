@@ -23,7 +23,7 @@ cd.
 ## image
 
 image in readme - you can also use any image of your repo in the readme.
-![image](imges/git-github.png)
+![image](images/git-github.png)
 
 
 ## Links
