@@ -1,0 +1,4 @@
+git init  -> this command is for intialize a repository
+git add .  -> this command is for add all the files to the staging area
+git commit -m "message"  -> this command is for commit the staging area to the local repository
+git push origin master  -> this command is for push the commit to the remote repository
