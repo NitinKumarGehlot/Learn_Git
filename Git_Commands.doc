@@ -1,4 +1,62 @@
-git init  -> this command is for intialize a repository
-git add .  -> this command is for add all the files to the staging area
-git commit -m "message"  -> this command is for commit the staging area to the local repository
-git push origin master  -> this command is for push the commit to the remote repository
+git init  -> This command is used for intialize a repository.
+
+git status -> This command is used for know the status of local repository.
+
+git add .  -> This command is used for add all the files to the staging area.
+
+git add FILE_NAME -> This command is used for add the specific file in staging area. 
+
+git reset FILE_NAME/git rm --cached FILE_NAME/git reset HEAD FILE_NAME -> This command is used for unstaged the specific file.
+
+git reset HEAD -p -> This command is used for unstaged the files one by one.
+
+git commit -m "MESSAGE"  -> This command is used for commit the staging area to the local repository.
+
+git tag TAG_NAME -> This command is used for apply tag on any commit. This will be applicable only just after commit. 
+
+git log -> This command is Git's basic tool for exploring a repository's history.
+
+git log -p -> This command is used for show history of commit and changes both.(Press `Enter` for next , Press `q` for quit)
+
+git push origin master  -> This command is used for push the commit to the remote repository.
+
+git checkout TAG_NAME -> For back on any commit , Use commit tag name.
+
+git reset --hard -> undoing a previous commit or series of commits and restoring the repository to a previous state.
+
+git push -> This command is used for push into remote repository.
+
+git diff -> This command is used for check the modifiction in the repository (Modification but before staged).
+
+git diff FILE_NAME -> This command is used for check the modifiction in specific file (Modification but before staged).
+
+git diff --staged -> This command is used for check the modification in the repository (Staged but before commit).
+
+git commit -a -m "MESSAGE" -> This command is used for add and commit both.
+
+git reflog -> This command is used to list of these references, commit hash, and commit messages for each.
+
+git show COMMIT_HASH_VALUE -> This command is used to know the details of any commit.
+
+git rm FILE_NAME -> This command is used to delete any file.
+
+git mv OLD_FILE_NAME NEW_FILE_NAME -> This command is used to rename any file./This command is also used for move the file.
+
+-----------------------------------------
+(ROLLBACK)
+
+git revert HEAD -> Delete last commited data.(ROLLBACK last commit)
+
+git reflog
+
+git revert COMMIT_HASH_VALUE -> Delete specific commited data.(ROLLBACK specific commit)
+
+git checkout TAG_NAME -> Delete all commit after this TAG_NAME commit.
+
+git tag TAG_NAME COMMIT_HASH_VALUE -> For put a tag on specific commit.
+
+git tag list -> For list all tages.
+
+git tag -a TAG_NAME -m "MESSAGE" -> Put a tag on last commit with a message.
+
+git tag -d TAG_NAME -> Delete a tag by TAG_NAME.

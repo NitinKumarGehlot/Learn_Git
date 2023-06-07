@@ -9,7 +9,14 @@ Snapshot and Commit
 HEAD
 Branch and Branching Strategy
 Tag
-Rollback
-Upstream
-Conflict Merge
+Rollback == Back on any commit is called Rollback
+Upstream == Main/Master of remote repository is called Upstream
+Conflict Merge == Conflict merge can occur when multiple developers are working on same project and making changes 
+                    to the same files, or when a single developer is working on multiple branches and making
+                    conflicting changes to the same files.
+
+
+- Commit
+- Rollback
+- Checkout
 
