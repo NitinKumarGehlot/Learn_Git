@@ -32,8 +32,8 @@ you can also use this built in website to built readme file.
 -[https://readme.so/](https://readme.so/)
 
 ## API PROJECT  
-===
-_cscapp - application for countries, states, cities api_
+
+> _cscapp - application for countries, states, cities api_
 ---
 
 #### How to run project
