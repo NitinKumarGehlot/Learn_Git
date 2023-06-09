@@ -31,8 +31,8 @@ image in readme - you can also use any image of your repo in the readme.
 you can also use this built in website to built readme file.
 -[https://readme.so/](https://readme.so/)
 
-## API PROJECT
-cscapp - application for countries, states, cities api
+## API PROJECT  
+_cscapp - application for countries, states, cities api_
 ---
 
 #### How to run project
@@ -47,7 +47,7 @@ cd apiproject
 pip install -r requirements.txt
 ```
 
-create a database 'apidatabase'  
+create a database 'apidatabase'
 upload countries.sql , states.sql , cities.sql (from countries-states-cities-database-master\sql folder into your apidatabase)
 
 ```bash
