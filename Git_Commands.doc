@@ -1,8 +1,10 @@
+--------------------------------------- Local Repository ---------------------------------------
+
 git init  -> This command is used for intialize a repository.
 
 git status -> This command is used for know the status of local repository.
 
-git add .  -> This command is used for add all the files to the staging area.
+git add ./git add -a  -> This command is used for add all the files to the staging area.
 
 git add FILE_NAME -> This command is used for add the specific file in staging area. 
 
@@ -18,13 +20,9 @@ git log -> This command is Git's basic tool for exploring a repository's history
 
 git log -p -> This command is used for show history of commit and changes both.(Press `Enter` for next , Press `q` for quit)
 
-git push origin master  -> This command is used for push the commit to the remote repository.
-
 git checkout TAG_NAME -> For back on any commit , Use commit tag name.
 
 git reset --hard -> undoing a previous commit or series of commits and restoring the repository to a previous state.
-
-git push -> This command is used for push into remote repository.
 
 git diff -> This command is used for check the modifiction in the repository (Modification but before staged).
 
@@ -42,12 +40,11 @@ git rm FILE_NAME -> This command is used to delete any file.
 
 git mv OLD_FILE_NAME NEW_FILE_NAME -> This command is used to rename any file./This command is also used for move the file.
 
------------------------------------------
-(ROLLBACK)
+--------------------------------------- Rollback ----------------------------------------------
 
 git revert HEAD -> Delete last commited data.(ROLLBACK last commit)
 
-git reflog
+git reflog -> Git keeps track of updates to the tip of branches.
 
 git revert COMMIT_HASH_VALUE -> Delete specific commited data.(ROLLBACK specific commit)
 
@@ -55,8 +52,59 @@ git checkout TAG_NAME -> Delete all commit after this TAG_NAME commit.
 
 git tag TAG_NAME COMMIT_HASH_VALUE -> For put a tag on specific commit.
 
-git tag list -> For list all tages.
+git tag list/git tag --list -> For list all tages.
 
 git tag -a TAG_NAME -m "MESSAGE" -> Put a tag on last commit with a message.
 
 git tag -d TAG_NAME -> Delete a tag by TAG_NAME.
+
+------------------------------------------ Branching -----------------------------------------------
+
+git branch  -> To show the list of branches(Current working branch show with green color and *)
+
+git branch BRANCH_NAME -> Create a branch with BRANCH_NAME
+
+git checkout BRANCH_NAME -> switched to BRANCH_NAME branch
+
+git checkout -b BRANCH_NAME -> create and switched both on BRANCH_NAME branch
+
+git branch -D BRANCH_NAME -> for delete BRANCH_NAME branch
+
+git merge BRANCH_NAME -> merge any branch in master branch
+
+git rebase BRANCH_NAME-> Transfer complete work of current branch to BRANCH_NAME branch
+
+git stash -> Modified work added temperarly without commit.(if you want to switch branch without commit current branch this is mandatory.)
+
+git stash pop -> get temperarly data back 
+
+git stash list -> list stashes
+
+git stash drop -> delete stash
+
+------------------------------------- Remote Repository ------------------------------------
+git remote add origin HTTPS_OF_REPOSITORY -> connect local repository to remote repository.
+
+git remote -v
+
+git push --set--upstream origin master/git push -u origin master -> create a upstream on remote repository(upstream is mandatory for push on remote)
+
+git push -> This command is used for push into remote repository.
+
+git push origin BRANCH_NAME -> push any branch from local to remote
+
+git push origin TAG_NAME -> push any tag to remote
+
+git push origin --tags -> push all tags to remote
+
+git pull -> fetch all work from remote to local
+
+git clone HTTPS_OF_REPOSITORY -> clone any repository from remote to local.
+
+-------------------------------- .gitignore -----------------------------
+
+cache/ -> Ignore All Files in any directory named cache.
+
+.env -> Ignore .env file.
+
+*.txt -> Ignore any file with .txt extension.

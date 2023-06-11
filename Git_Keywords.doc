@@ -16,7 +16,5 @@ Conflict Merge == Conflict merge can occur when multiple developers are working 
                     conflicting changes to the same files.
 
 
-- Commit
-- Rollback
 - Checkout
 
